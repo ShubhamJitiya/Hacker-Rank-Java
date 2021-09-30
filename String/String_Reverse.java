@@ -7,7 +7,20 @@ public class String_Reverse {
 
         Scanner sc=new Scanner(System.in);
         String A=sc.next();
-        System.out.println(A.equals(new StringBuilder(A).reverse().toString())?"Yes":"No");
-
+        int l=0,r=A.length();
+        while(l<r){
+            if(A.at(l)!=A.at(r)){
+                f=1;
+                break;
+            }
+            l++;
+            r--;
+        }
+        if(f==1){
+            System.out.println("NO");
+        }
+        else{
+            System.out.println("YES");
+        }
     }
 }
