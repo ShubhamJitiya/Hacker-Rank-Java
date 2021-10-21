@@ -10,6 +10,9 @@ public class BigInteger {
 
             java.math.BigInteger num1 = scan.nextBigInteger();
             java.math.BigInteger num2 = scan.nextBigInteger();
+        
+            scan.close();
+            // It's a good practice to close the resources after using it.
 
             java.math.BigInteger sum = num1.add(num2);
             java.math.BigInteger mul = num1.multiply(num2);
